@@ -1,0 +1,151 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  font-family: monospace, sans-serif, 'Times New Roman', Times, serif;
+  background-image: url('Background5.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.first {
+  background-color: #9B1B30;
+}
+
+.grid {
+  display: flex;
+  flex-direction: row;
+
+}
+
+.grid a {
+  border: 2px solid beige;
+  background-color: #580f1a;
+  color: beige;
+  font-weight: bold;
+  text-decoration: none;
+  padding: 2px;
+  gap: 0;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.intro {
+  background-image: url('Background.png');
+  height: auto;
+  max-height: 65vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: grid;
+  grid-template-columns: 60% 30%;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 10px;
+  color: beige;
+}
+
+.grid2 {
+  display: grid;
+  grid-template-columns: 35% 35%;
+  font-size: 70%;
+  gap: 5%;
+  justify-content: center;
+}
+
+.grid2 .greeting {
+  text-align: justify;
+}
+
+.intro img {
+  height: 30vh;
+  margin-top: 5%;
+  border-radius: 50%;
+  aspect-ratio: 1/1;
+}
+
+.intro h1,
+.intro h4 {
+  text-align: center;
+}
+
+.achievement {
+  display: grid;
+  grid-template-columns: 30% 30% 30%;
+  gap: 20px;
+  margin: 10px;
+  justify-items: center;
+  justify-content: space-evenly;
+}
+
+.block {
+  text-align: center;
+  padding: 10px;
+  border: 5px solid #7b1022;
+  background-color: #7b1022;
+}
+
+.block img {
+  max-width: 25vw;
+  aspect-ratio: 1/1;
+  border-bottom: 5px solid #7b1022;
+}
+
+.block p {
+  margin: 5px;
+  margin-bottom: 5px;
+  padding-bottom: 5px;
+  font-weight: bold;
+  font-size: large;
+  color: beige;
+}
+
+
+@media screen and (max-width: 400px) {
+
+  body {
+    max-width: 100vw;
+    margin: 5px;
+    font-size: 60%;
+    max-height: auto;
+    overflow:visible
+  }
+
+  .allabove{
+    display: flex;
+    flex-direction: column;
+    row-gap: 35px;
+    background-color: #4e0e18;
+  }
+
+  .grid {
+    justify-content: center;
+    background-color: #4e0e18;
+    gap: 5%;
+  }
+
+  .grid a {
+    border-radius: 0;
+    border: none;
+
+  }
+
+  .intro {
+    max-height: auto;
+    display: flex;
+    flex-direction: column-reverse;
+     align-items: center;
+
+  }
+
+  .achievement {
+    grid-template-columns: 80%;
+    max-width: 80vw;
+    margin-left: 5vw;
+  }
+
+  .block {
+    width: 65%;
+  }
+
+}
